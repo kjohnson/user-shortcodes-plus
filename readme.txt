@@ -4,25 +4,27 @@ Tags: user, shortcodes, meta
 Donate link: http://kylebjohnson.me/plugins
 Requires at least: 4.2
 Tested up to: 4.5
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add simple user shortcodes to WordPress for displaying information about any user.
+Add simple user shortcodes to WordPress for displaying information, including custom meta and avatars, for any user.
 
 == Description ==
-Add simple user shortcodes to WordPress for displaying information about any user.
+Add simple user shortcodes to WordPress for displaying information, including custom meta and avatars, for any user.
 
 Available Shortcodes:
-- [user_id]
-- [user_login]
-- [user_email]
-- [user_firstname]
-- [user_lastname]
-- [user_nicename]
-- [user_display]
-- [user_display_name]
-- [user_registered]
+* [user_id]
+* [user_login]
+* [user_email]
+* [user_firstname]
+* [user_lastname]
+* [user_nicename]
+* [user_display]
+* [user_display_name]
+* [user_registered]
+* [user_avatar]
+* [user_avatar_url]
 
 Displaying userdata for another user:
 
@@ -47,11 +49,17 @@ What shortcodes are supported?
 - [user_display]
 - [user_display_name]
 - [user_registered]
+- [user_avatar]
+- [user_avatar_url]
 
 == Screenshots ==
 1. Example use of shortcodes
 
 == Changelog ==
+
+= 1.0.1 =
+
+Add support for [user_avatar] and [user_avatar_url].
 = 1.0.0 =
 
 Initial Commit
