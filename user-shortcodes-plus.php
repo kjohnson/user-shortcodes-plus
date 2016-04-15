@@ -3,7 +3,7 @@
 /*
  * Plugin Name: User Shortcodes Plus
  * Plugin URI: http://kylebjohnson.me/plugins
- * Description: Add simple user shortcodes to WordPress for displaying information about any user.
+ * Description: Add simple user shortcodes to WordPress for displaying information, including <strong>custom meta</strong> and <strong>avatars</strong>, for any user.
  * Version: 1.0.0
  * Author: Kyle B. Johnson
  * Author URI: http://kylebjohnson.me
