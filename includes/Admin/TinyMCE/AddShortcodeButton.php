@@ -11,7 +11,7 @@ final class KBJ_UserShortcodesPlus_Admin_TinyMCE_AddShortcodeButton
     public function insert_button( $context )
     {
         global $pagenow;
-        if( 'post.php' != $pagenow ){
+        if( ! in_array( $pagenow, array( 'post.php', 'post-new.php' ) ) ){
             return $context;
         }
 
