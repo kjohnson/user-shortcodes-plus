@@ -2,9 +2,9 @@
 Contributors: kbjohnson90
 Tags: user, shortcodes, meta
 Donate link: http://kylebjohnson.me/plugins
-Requires at least: 4.3
-Tested up to: 4.5.2
-Stable tag: 2.0.0
+Requires at least: 4.5
+Tested up to: 4.7.3
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,9 @@ What shortcodes are supported?
 5. Any user metadata can be displayed using the [user_meta] shortcode with a specified 'key' attribute.
 
 == Changelog ==
+
+= 2.0.1 =
+* Fixed a bug with showing the TinyMCE Button on new posts/pages.
 
 = 2.0.0 =
 * Add support for [user_url] and [user_website] shortcodes.

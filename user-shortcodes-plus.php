@@ -4,7 +4,7 @@
  * Plugin Name: User Shortcodes Plus
  * Plugin URI: http://kylebjohnson.me/plugins
  * Description: Add simple user shortcodes to WordPress for displaying information, including <strong>custom meta</strong> and <strong>avatars</strong>, for any user.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Kyle B. Johnson
  * Author URI: http://kylebjohnson.me
  * Text Domain: user-shortcodes-plus
@@ -14,7 +14,7 @@
 
 final class KBJ_UserShortcodesPlus
 {
-    const VERSION = '2.0.0';
+    const VERSION = '2.0.1';
 
     const PREFIX  = 'KBJ_UserShortcodesPlus';
 
