@@ -23,7 +23,11 @@ final class KBJ_UserShortcodesPlus_Shortcodes_User
         $property = $this->get_property( $tag );
         $userdata = $this->get_userdata( $atts[ 'id' ] );
 
-        return $userdata->$property;
+        if( ! $userdata && defined( 'WP_DEBUG' ) && WP_DEBUG ){
+            return '<p>' . sprintf( __( 'User ID %s does not exist.', 'user-shortcodes-plus' ), $atts[ 'id' ] ) . '</p>';
+        }
+
+        return ( is_object( $userdata ) ) ? $userdata->$property : '';
     }
 
     private function get_property( $tag )
