@@ -12,11 +12,12 @@ final class KBJ_UserShortcodesPlus_Shortcodes_UserAvatar
     {
         $atts = shortcode_atts( array(
             'id' => get_current_user_id(),
+            'size' => 96
         ), $atts );
 
         $userdata = get_userdata( $atts[ 'id' ] );
 
-        return get_avatar( $userdata->user_email );
+        return get_avatar( $userdata->user_email, $atts[ 'size' ] );
     }
 
     public function user_avatar_url( $atts )
