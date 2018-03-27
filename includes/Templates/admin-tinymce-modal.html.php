@@ -23,6 +23,8 @@
                 <?php if( isset( $shortcode[ 'is_alias' ] ) && $shortcode[ 'is_alias' ] ) continue; ?>
                 <option value="<?php echo $shortcode[ 'tag' ]; ?>"><?php echo $shortcode[ 'label' ]; ?></option>
             <?php endforeach; ?>
+            <option value="user_avatar"><?php _e( 'User Avatar' ); ?></option>
+            <option value="user_avatar_url"><?php _e( 'User Avatar URL' ); ?></option>
             <option value="user_meta"><?php _e( 'Custom User Meta' ); ?></option>
         </select>
     </p>
