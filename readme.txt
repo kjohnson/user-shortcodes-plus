@@ -3,8 +3,8 @@ Contributors: kbjohnson90
 Tags: user, shortcodes, meta
 Donate link: http://kylebjohnson.me/plugins
 Requires at least: 4.5
-Tested up to: 4.7.3
-Stable tag: 2.0.1
+Tested up to: 5.2.2
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ What shortcodes are supported?
 
 == Changelog ==
 
+= 2.0.2 =
+* Add autocomplete support for the Block Editor (Gutenberg).
+
 = 2.0.1 =
 * Fixed a bug with showing the TinyMCE Button on new posts/pages.
 
@@ -87,8 +90,5 @@ What shortcodes are supported?
 
 == Upgrade Notice ==
 
-= 2.0.0 =
-Added new shortcodes for the user's website and bio. Also added a TinyMCE button.
-
-= 1.0.1 =
-Added new shortcodes for the user's avatar.
+= 2.0.2 =
+* Add autocomplete support for the Block Editor (Gutenberg).
