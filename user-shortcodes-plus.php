@@ -29,6 +29,7 @@ final class KBJ_UserShortcodesPlus
         add_action( 'init', array( $this, 'init' ) );
         add_action( 'admin_init', array( $this, 'admin_init' ) );
         add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+        add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_block_editor_assets' ) );
     }
 
     public function init()
@@ -50,6 +51,12 @@ final class KBJ_UserShortcodesPlus
 
         wp_register_script( 'kbj_user_shortcodes_plus_admin_js', self::url( 'assets/js/admin.js' ), array( 'jquery' ), self::VERSION );
         wp_enqueue_script( 'kbj_user_shortcodes_plus_admin_js' );
+    }
+
+    public function enqueue_block_editor_assets()
+    {
+        wp_enqueue_script( 'kbj_user_shortcodes_plus_block_editor_js', self::url( 'assets/js/editor.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ) );
+        wp_localize_script( 'kbj_user_shortcodes_plus_block_editor_js', 'userShortcodesPlus', array_values( KBJ_UserShortcodesPlus::config( 'Shortcodes' ) ) );
     }
 
     public static function instance()
